@@ -1,12 +1,22 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-sidebar {
+  min-width: 240px;
+  background-color: rgb(17, 24, 39);;
+  height: 100vh;
+  text-align: left;
 }
 
+.grid-wrapper-content{
+  background-color:#F9FAFC;
+}
+.app-wrapper-content{
+  max-width: 95%;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 3px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
