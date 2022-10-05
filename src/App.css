@@ -3,19 +3,18 @@
 }
 .app-sidebar {
   min-width: 240px;
-  background-color: rgb(17, 24, 39);;
+  background-color: rgb(17, 24, 39);
   height: 100vh;
   text-align: left;
 }
 
-.grid-wrapper-content{
-  background-color:#F9FAFC;
-}
-.app-wrapper-content{
+.app-wrapper-content {
   max-width: 95%;
   background-color: #fff;
   margin: 0 auto;
-  border-radius: 3px;
+  border-radius: 5px;
+  min-height: 500px;
+  margin-top: 30px;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
