@@ -1,10 +1,10 @@
 import { Grid } from "@mui/material";
 
 import { Routes, Route } from "react-router-dom";
-import About from "./components/About/About";
-import GlobalStatistic from "./components/GlobalStatistic/GlobalStatistic";
-import CountriesStatistic from "./components/CountriesStatistic/CountriesStatistic";
-import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
+import About from "./pages/About/About";
+import GlobalStatistic from "./pages/GlobalStatistic/GlobalStatistic";
+import CountriesStatistic from "./pages/CountriesStatistic/CountriesStatistic";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import Sidebar from "./components/Sidebar/Sidebar";
 import "./App.css";
 
