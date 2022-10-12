@@ -11,9 +11,10 @@ const MuiPicker = ({value, setValue}) => {
   return (
     <LocalizationProvider
       dateAdapter={AdapterDayjs}
-      localeText={{ start: "Check-in", end: "Check-out" }}
+      localeText={{ start: "from", end: "to" }}
     >
       <DateRangePicker
+      disableFuture
         value={value}
         onChange={(newValue) => {
           setValue(newValue);
@@ -21,7 +22,7 @@ const MuiPicker = ({value, setValue}) => {
         renderInput={(startProps, endProps) => (
           <React.Fragment>
             <TextField {...startProps} />
-            <Box sx={{ mx: 2 }}> to </Box>
+            <Box sx={{ mx: 2 }}> </Box>
             <TextField {...endProps} />
           </React.Fragment>
         )}
