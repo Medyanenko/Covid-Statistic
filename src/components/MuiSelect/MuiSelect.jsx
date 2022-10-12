@@ -4,23 +4,25 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-
+import s from "./MuiSelect.module.css"
 const MuiSelect = ({cases, handleChange}) => {
 
   return (
-    <Box sx={{ maxWidth: 120 }}>
+    <Box sx={{ width: 220 }}>
       <FormControl fullWidth>
-        <InputLabel id="select-label">Cases</InputLabel>
+        <InputLabel id="select-label">cases</InputLabel>
         <Select
           labelId="select-label"
           id="demo-simple-select"
           value={cases}
-          label="Cases"
+          label="cases"
           onChange={handleChange}
+          className={s.SelectInput}
         >
-          <MenuItem value='NewConfirmed'>newConfirmed</MenuItem>
-          <MenuItem value='TotalConfirmed'>totalConfirmed</MenuItem>
-          <MenuItem value='NewDeaths'>newDeaths</MenuItem>
+          <MenuItem value='NewConfirmed'>New confirmed</MenuItem>
+          <MenuItem value='TotalConfirmed'>Total confirmed</MenuItem>
+          <MenuItem value='NewDeaths'>New deaths</MenuItem>
+          <MenuItem value='TotalDeaths'>Total deaths</MenuItem>
         </Select>
       </FormControl>
     </Box>

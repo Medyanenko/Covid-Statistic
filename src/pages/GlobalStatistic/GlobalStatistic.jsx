@@ -4,6 +4,7 @@ import axios from "axios";
 import MuiPicker from "../../components/MuiPicker/MuiPicker";
 import MuiSelect from "../../components/MuiSelect/MuiSelect";
 import LineChartGlobal from "../../components/LineChart/LineChart";
+import s from "./GlobalStatistic.module.css"
 
 const GlobalStatistic = () => {
   const [WorldWipItems, setWorldWipItems] = useState([]);
@@ -49,12 +50,11 @@ const GlobalStatistic = () => {
 
   return (
     <div>
+      <div className={s.selectedBlock}>
       <MuiPicker value={value} setValue={setValue} />
-      <MuiSelect
-        cases={cases}
-        handleChange={handleChange}
-      />
-      <LineChartGlobal data={data}/>
+      <MuiSelect cases={cases} handleChange={handleChange} />
+      </div>
+      {cases ? <LineChartGlobal data={data} /> : ""}
     </div>
   );
 };

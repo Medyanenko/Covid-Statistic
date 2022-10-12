@@ -1,0 +1,10 @@
+.selectedBlock{
+    display: flex;
+    max-width: 950px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 50px 0;
+}
+.lineCtartBlock{
+    margin: 0 auto;
+}

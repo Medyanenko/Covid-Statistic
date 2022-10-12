@@ -24,6 +24,7 @@ const MuiPicker = ({value, setValue}) => {
             <TextField {...startProps} />
             <Box sx={{ mx: 2 }}> </Box>
             <TextField {...endProps} />
+            <Box sx={{ mx: 2 }}> </Box>
           </React.Fragment>
         )}
       />
